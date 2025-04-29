@@ -1,0 +1,74 @@
+
+<!-- 3f. Continuing from exercise 2f. recreate this design using CSS: -->
+<style>
+    .amazon-link {
+        color: rgb(0, 113, 133);
+        transition: color .15s;
+    }
+    .amazon-link:hover {
+        color: rgb(162, 65, 21);
+    }
+
+    .item-title {
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .item-price {
+        color: rgb(0, 118, 0);
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .item-shipping {
+        font-size: 20px;
+    }
+
+    .amazon-add-button {
+        background-color: rgb(255, 216, 20);
+        border: none;
+        border-radius: 20px;
+        font-size: 16px;
+
+        height: 36px;
+        width: 150px;
+        cursor: pointer;
+        transition: background-color .15s, opacity .15s;
+    }
+
+    .amazon-add-button:hover {
+        background-color: rgb(214, 170, 1);
+    }
+
+    .amazon-add-button:active {
+        opacity: .5;
+    }
+
+    .amazon-buy-button {
+        background-color: rgb(255, 164, 28);
+        border: none;
+        border-radius: 20px;
+        font-size: 16px;
+
+        height: 36px;
+        width: 150px;
+        cursor: pointer;
+        transition: background-color .15s, opacity .15s;
+    }
+
+    .amazon-buy-button:hover {
+        background-color: rgb(218, 110, 1);
+    }
+
+    .amazon-buy-button:active {
+        opacity: .5;
+    }
+
+</style>
+
+<a class="amazon-link" href="https://www.amazon.com">Back to Amazon</a>
+<p class="item-title">Nike Black Running Shoes</p>
+<p class="item-price">$39 - in stock</p>
+<p class="item-shipping">Free delivery tomorrow.</p>
+<button class="amazon-add-button">Add to Cart</button>
+<button class="amazon-buy-button">Buy now</button>
