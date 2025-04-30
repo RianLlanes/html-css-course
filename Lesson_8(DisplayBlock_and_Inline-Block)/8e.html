@@ -1,0 +1,53 @@
+<!-- 8e. Uber request-a-ride form -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8e</title>
+    <style>
+        * {
+            font-family: Arial;
+        }
+
+        .text-request {
+            font-size: 36px;
+            margin-top: 0px;
+            margin-bottom: 30px;
+        }
+
+        .pickup-location, .destination {
+            display: block;
+            background-color: rgb(240, 240, 240);
+            border: none;
+            width: 350px;
+            height: 35px;
+            margin-bottom: 10px;
+            text-indent: 15px;
+        }
+
+        .request-now, .schedule-for-later {
+            padding: 10px 20px;
+            border: none;
+            margin-top: 30px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        .request-now {
+            background-color: rgb(0, 0, 0);
+            color: white;
+        }
+
+
+    </style>
+</head>
+<body>
+    <p class="text-request">Request a ride now</p>
+    <input type="text" class="pickup-location" placeholder="Enter pickup location">
+    <input type="text" class="destination" placeholder="Enter destination">
+
+    <button class="request-now">Request now</button>
+    <button class="schedule-for-later">Schedule for later</button>
+</body>
+</html>
