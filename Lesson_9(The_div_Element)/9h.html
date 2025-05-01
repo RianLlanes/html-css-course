@@ -1,0 +1,82 @@
+<!-- 9h. Continuing from exercise 8c. we'll finish the Google Search design
+    To center everything: 
+    - Wrap each line with a <div> and use text-align: center on the <div>
+    - Remove any uses of display: block on the image/input (display: block 
+    causes elements to take up the entire line, so they can’t be centered)
+    -->
+
+<!-- 8c. Download Google's logo and create the google.com search form
+    - We created the textbox in exercise 7e.
+    - For now, position the logo with margin (we'll learn better ways to do this later)-->
+
+<!-- 7e. With a shadow, and no border -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8c</title>
+    <style>
+        /* body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        } */
+
+        .google-div {
+            text-align: center;
+        }
+
+        .google-logo {
+            width: 300px;
+            display: inline-block;
+        }
+
+        .search-div {
+            text-align: center;
+        }
+
+        .search-bar {
+            font-family: Arial;
+            font-size: 16px;
+            width: 500px;
+            height: 35px;
+            border-radius: 20px;
+            border: none;
+            border-color: gray;
+            color: gray;
+            text-indent: 10px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+            margin-bottom: 20px;
+        }
+
+        .buttons {
+            text-align: center;
+        }
+
+        .google-search, .im-feeling-lucky {
+            background-color: #f8f9fa;
+            font-size: 16px;
+            border: none;
+            padding: 10px 20px;
+            margin-right: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="google-div">
+        <img src="Google-Logo.png" alt="google.png" class="google-logo">
+    </div>
+    <div class="search-div">
+        <input class="search-bar" type="text" placeholder="Search Google or type a URL">
+    </div>
+    <div class="buttons">
+        <button class="google-search"> Google Search</button>
+        <button class="im-feeling-lucky">I'm Feeling Lucky</button>
+    </div>
+
+</body>
+</html>
+
