@@ -1,0 +1,41 @@
+<!-- 11c. Create a grid with 4 equal columns that take up the entire page.
+    Space between columns = 20px, space between rows = 10px
+    -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11c</title>
+    <style>
+        .container-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            column-gap: 20px;
+            row-gap: 10px;
+        }
+
+        .lightblue {
+            background-color: lightblue;
+        }
+
+        .pink {
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-grid">
+        <div class="pink">col1</div>
+        <div class="pink">col2</div>
+        <div class="pink">col3</div>
+        <div class="pink">col4</div>
+
+        <div class="pink">col1</div>
+        <div class="pink">col2</div>
+        <div class="pink">col3</div>
+        <div class="pink">col4</div>
+    </div>
+</body>
+</html>

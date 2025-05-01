@@ -1,0 +1,122 @@
+<!-- 11d. Continuing from exercise 10e, create this design using CSS Grid
+    - Create a grid with 3 columns and put the elements into the Grid
+    - Replace any uses of display: inline-block
+    - To align elements vertically in a grid, use 
+-->
+
+<!-- 10e. Build the design in exercise 10d. with code 
+    (most of this was already built in exercise 9g.)
+    - Create vertical layouts with <div>
+    - Create horizontal layouts with <div> and display: inline-block;
+-->
+
+<!-- 9f. Recreate this design -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10e</title>
+    <style>
+        * {
+            font-family: Arial;
+        }
+
+        .container-grid {
+            display: grid;
+            grid-template-columns: 200px 200px 200px;
+            column-gap: 20px;
+        }
+
+        .container {
+
+            box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.15);
+        }
+
+        .sub-container {
+            padding: 10px 10px;
+        }
+
+        .image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .name {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .mutual-friends {
+            display: grid;
+            grid-template-columns: 30px 1fr;
+            column-gap: 10px;
+        }
+
+        .mutual-picture {
+            width: 30px;
+            border-radius: 50px;
+        }
+
+        .mutual-friends-text {
+            color: gray;
+            vertical-align: top;
+            margin-top: 8px;
+        }
+
+        .add-friend {
+            background-color: rgb(48, 98, 196);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor:pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container-grid">
+        
+        <div class="container">
+            <img src="/thumbnails/Pusheen1.jpg" alt="" class="image">
+            <div class="sub-container">
+                <p class="name">Pusheen</p>
+                <div class="mutual-friends">
+                    <img src="/thumbnails/Pugsheen.webp" alt="Pugsheen" class="mutual-picture">
+                    <p class="mutual-friends-text">2 mutual friends</p>
+                </div>
+        
+                <button class="add-friend">Add Friend</button>
+            </div>
+        </div>
+        <div class="container">
+            <img src="/thumbnails/Pip.png" alt="" class="image">
+            <div class="sub-container">
+                <p class="name">Pip</p>
+                <div class="mutual-friends">
+                    <img src="/thumbnails/Pugsheen.webp" alt="MutualFriend1" class="mutual-picture">
+                    <p class="mutual-friends-text">3 mutual friends</p>
+                </div>
+                <button class="add-friend">Add Friend</button>
+            </div>
+        </div>
+        
+        <div class="container">
+            <img src="/thumbnails/Stormy.svg" alt="" class="image">
+            <div class="sub-container">
+                <p class="name">Stormy</p>
+                <div class="mutual-friends">
+                    <img src="/thumbnails/Pugsheen.webp" alt="MutualFriend2" class="mutual-picture">
+                    <p class="mutual-friends-text">4 mutual friends</p>
+                </div>
+                <button class="add-friend">Add Friend</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
