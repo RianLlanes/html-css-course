@@ -1,0 +1,81 @@
+<!-- 12f. Create this design -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12f</title>
+    <style>
+
+        .navbar {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(99, 72, 149);
+            font-family: Arial;
+            font-size: 16px;
+            padding: 15px;
+            gap: 20px;
+        }
+
+        .search-bar {
+            flex: 1;
+            max-width: 600px;
+            font-family: Arial;
+            font-size: 16px;
+            height: 35px;
+            border-radius: 20px;
+            border: none;
+            border-color: gray;
+            color: gray;
+            text-indent: 10px;
+        }
+
+        /* .left-section {
+
+        } */
+
+        .home-link {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        .middle-section {
+            display: flex;
+            justify-content: center;
+            flex: 1;
+        }
+
+        /* .right-section {
+
+        } */
+
+        .download-button {
+            padding: 10px 20px;
+            background-color: rgb(99, 72, 149);
+            border: 1px solid white;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="left-section">
+            <a class="home-link" href="">Home</a>
+        </div>
+        <div class="middle-section">
+            <input type="text" class="search-bar" placeholder="Search">
+        </div>
+        <div class="right-section">
+            <button class="download-button">Download</button>
+        </div>
+    </div>
+</body>
+</html>

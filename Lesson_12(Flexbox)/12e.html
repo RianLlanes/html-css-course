@@ -1,0 +1,57 @@
+<!-- 12e. Create this design -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12e</title>
+    <style>
+        .flexbox-container {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            width: 300px;
+            border: 1px solid rgb(212, 212, 212);
+            border-radius: 5px;
+            padding: 10px 20px;
+            gap: 20px;
+        }
+
+        .flexbox-sub-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            font-size: 24px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .col1, .col3, .col5 {
+            
+        }
+
+        .col2, .col4, .col6 {
+            background-color: rgb(66, 108, 235);
+            color: white;
+            padding: 0px 12px;
+            border-radius: 15px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="flexbox-container">
+        <div class="flexbox-sub-container">
+            <div class="col1">Home</div>
+            <div class="col2">14</div>
+        </div>
+        <div class="flexbox-sub-container">
+            <div class="col3">Notifications</div>
+            <div class="col4">3</div>
+        </div>
+        <div class="flexbox-sub-container">
+            <div class="col5">Messages</div>
+            <div class="col6">5</div>
+        </div>
+    </div>
+</body>
+</html>
