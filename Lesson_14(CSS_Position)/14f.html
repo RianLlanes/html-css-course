@@ -1,0 +1,96 @@
+<!-- 14f. Create the double-sidebar from 
+    Discord using a combination of 
+    position: fixed and flexbox. 
+    - Stick it to the left side of the page. 
+    - Feel free to use different images 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>14f</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+        }
+
+        body {
+            height: 3000px;
+        }
+
+        .discord-server-list {
+            width: 80px;
+            padding-top: 20px;
+            background: rgb(26, 28, 31);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+        }
+
+        img {
+            width: 70%;
+            border-radius: 50%;
+        }
+
+        .discord-channel-list {
+            background-color: rgb(41, 42, 46);
+            width: 200px;
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 80px;
+            padding: 20px 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .info {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        .channel-group-name {
+            color: white;
+        }
+
+        .new-videos, .updates,
+        .faq, span {
+            color: gray;
+        }
+
+        span {
+            font-size: 26px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="discord-server-list">
+        <img src="/thumbnails/Pusheen2.jpg" alt="">
+        <img src="/thumbnails/Stormy2.jpg" alt="">
+        <img src="/thumbnails/Pip2.jpg" alt="">
+    </div>
+    <div class="discord-channel-list">
+        <div class="info">
+            <div class="channel-group-name">INFO </div>
+            <span>+</span>
+        </div>
+        <div class="new-videos"># new-videos</div>
+        <div class="updates"># updates</div>
+        <div class="faq"># faq</div>
+        
+    </div>
+</body>
+</html>

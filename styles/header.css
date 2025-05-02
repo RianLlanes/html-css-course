@@ -3,10 +3,17 @@
 } */
 
 .header {
+    background-color: white;
     height: 60px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    border-bottom: 1px solid rgb(200, 200, 200);
+
 }
 
 .left-section {

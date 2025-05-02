@@ -1,0 +1,71 @@
+<!-- 14d. We'll create a modal
+    - Start from exercise 14b.
+    - Create an element that covers the entire page, with background-color: rgba(0, 0, 0, 0.8); (this is called an overlay).
+    - Make the overlay a flexbox and center its contents horizontally and vertically.
+    - Add a <div> in the overlay and create the modal. 
+-->
+
+<!-- 14b. Create a sidebar on the right side of the page, width = 100px -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>14b</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .right-sidebar {
+            background-color: rgb(51, 114, 32);
+            color: white;
+            position: fixed;
+            top: 0px;    
+            bottom: 0px;
+            right: 0;
+            width: 100px;
+        }
+
+        .cover {
+            background-color: rgba(0, 0, 0, 0.8);
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal {
+            background-color: white;
+            padding: 20px 20px;
+            border-radius: 10px;
+            width: 400px;
+        }
+
+        .modal-title {
+            margin-top: 0px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .modal-text {
+
+        }
+    </style>
+</head>
+<body>
+    <div class="right-sidebar">right sidebar</div>
+    <div class="cover">
+        <div class="modal">
+            <p class="modal-title">Modal Title</p>
+            <p class="modal-text">This is a modal</p>
+            <button>Close</button>
+        </div>
+    </div>
+</body>
+</html>
