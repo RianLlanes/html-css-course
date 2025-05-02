@@ -1,0 +1,101 @@
+<!-- 13g. Code this design using nested flexbox (flexbox inside flexbox) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>13g</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+        }
+
+        .post-container {
+            display: flex;
+            flex-direction: row;
+            gap: 15px;
+            width: 450px;
+            padding: 10px;
+        }
+
+        .user-profile-picture {
+            width: 80px;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 50%;
+        }
+
+        .post {
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .user-name {
+            font-weight: bold;
+        }
+
+        .user-identification {
+            color: rgb(91, 99, 106);
+        }
+
+        .user-post-text {
+            margin-top: 5px;
+            margin-bottom: 15px;
+            line-height: 20px;
+        }
+
+        .youtube-link {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .youtube-video-image {
+            width: 110px;
+            height: 100px;
+            background-color: rgb(211, 211, 211);
+            border-radius: 20px 0px 0px 20px;
+            flex-shrink: 0;
+        }
+
+        .youtube-text-container {
+            padding: 15px;
+            width: 100%;
+            border: 1px solid rgb(211, 211, 211);
+            border-radius: 0px 20px 20px 0px;
+        }
+
+        .youtube-video-url {
+            color: rgb(91, 99, 106);
+        }
+    </style>
+</head>
+<body>
+    <div class="post-container">
+        <div class="user-profile-picture">
+            <img src="/thumbnails/Pusheen2.jpg" alt="">
+        </div>
+        <div class="post">
+            <div><span class="user-name">Pusheen.dev</span> <span class="user-identification">@Pusheen</span></div>
+            <div class="user-post-text">
+                What is backend web development? A complete
+                overview. New video is up!
+            </div>
+            <div class="youtube-link">
+                <div class="youtube-video-image"></div>
+                <div class="youtube-text-container">
+                    <div class="youtube-video-url">youtube.com</div>
+                    <div class="youtube-video-title">
+                        Backend web development - a
+                        complete overview (2021)
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

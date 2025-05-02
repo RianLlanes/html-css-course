@@ -1,0 +1,59 @@
+<!-- 13b. Similar to exercise 13a, use nested flexbox (flexbox inside flexbox) to create the design below -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>13a</title>
+    <style>
+        .flexbox-container {
+            display: flex;
+            height: 60px;
+        }
+
+        .item1-100px {
+            background-color: lightpink;
+            width: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .item2-200px {
+            background-color: lightblue;
+            width: 200px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .row2 {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .row2-text {
+            background-color: black;
+            color: white;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="flexbox-container">
+        <div class="item1-100px">
+
+        </div>
+        <div class="item2-200px">
+            <div class="row1">
+                <div class="row1-text">row 1</div>
+            </div>
+            <div class="row2">
+                <div class="row2-text">row 2</div>
+                <div class="row2-text">row 2</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

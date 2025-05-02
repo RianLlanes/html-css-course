@@ -1,0 +1,96 @@
+<!-- 13d. Code the design. Use flexbox for horizontal layouts and regular <div> elements (display: block) for vertical layouts -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>13d</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .inbox-container {
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, .15);
+            width: fit-content;
+            border-radius: 5px;
+            padding: 10px 20px 30px 20px;
+            gap: 20px;
+        }
+
+        .all-inboxes-text, .email-time,
+        .email-content {
+            color: rgb(128, 128, 128);
+        }
+
+        .email-name, .email-title {
+            font-weight: bold;
+        }
+
+        .email-container {
+            display: flex;
+            flex-direction: row;
+
+        }
+
+        .email-profile-picture {
+            height: 60px;
+            width: 60px;
+            display: flex;
+            align-items: center;
+        }
+
+        img {
+            height: 90%;
+            width: 90%;
+            border-radius: 50%;
+        }
+
+        .email-details {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            flex: 1;
+        }
+
+        .email-name-and-time {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .email-time {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="inbox-container">
+        <div class="all-inboxes-text">ALL INBOXES</div>
+        <div class="email-container">
+            <div class="email-profile-picture">
+                <img src="/thumbnails/Pusheen2.jpg" alt="">
+            </div>
+            <div class="email-details">
+                <div class="email-name-and-time">
+                    <div class="email-name">
+                        Chewy Promotions
+                    </div>
+                    <div class="email-time">
+                        4:58 PM
+                    </div>
+                </div>
+                <div class="email-title">
+                    Biggest sales of the year!
+                </div>
+                <div class="email-content">
+                    Hey there! We're writing to tell you about our...
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
