@@ -1,7 +1,32 @@
-p {
+* {
     font-family: Roboto, Arial;
     margin-top: 0;
     margin-bottom: 0;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 15px;
+    row-gap: 20px;
+}
+
+.thumbnail-row {
+    margin-bottom: 12px;
+    position: relative;
+}
+
+
+.video-time {
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    right: 8px;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 4px;
+    border-radius: 2px;
 }
 
 .thumbnail {
@@ -51,13 +76,4 @@ p {
 
 }
 
-.thumbnail-row {
-    margin-bottom: 12px;
-}
 
-.video-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 15px;
-    row-gap: 20px;
-}

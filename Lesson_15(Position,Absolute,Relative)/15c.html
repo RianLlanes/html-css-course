@@ -1,0 +1,42 @@
+<!-- 15c. Take the 'Close Button' created in exercise 15a and put it inside the <div> created in exercise 15b.
+    - Using position: absolute inside position: fixed, move the 'Close Button' to the top-left corner.
+    - Use negative px for top and left and adjust the sizing if needed -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>15c</title>
+    <style>
+        body {
+            height: 3000px;
+        }
+
+        .gray-box {
+            background-color: rgb(124, 124, 124);
+            height: 180px;
+            width: 320px;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+
+        .x-button {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: black;
+            color: white;
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            padding: 6px 10px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="gray-box">
+        <div class="x-button">X</div>
+    </div>
+</body>
+</html>
