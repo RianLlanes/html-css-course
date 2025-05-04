@@ -1,3 +1,8 @@
+<!-- 16c. Using everything we learned in this course, create tooltips for
+    the channel pictures like the design below (you'll need to use
+    position, flexbox, hovers, transitions, and shadows)
+    - Extra: wrap the channel picture in a <div> with display: inline-block.
+    Use this <div> as the position: relative element -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,71 +16,71 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="styles/general.css">
-    <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/sidebar.css">
-    <link rel="stylesheet" href="styles/video.css">
+    <link rel="stylesheet" href="../styles/general.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/sidebar.css">
+    <link rel="stylesheet" href="../styles/video.css">
 </head>
 
 <body>
     <div class="header">
         <div class="left-section">
-            <img class="hamburger-menu" src="icons/hamburger-menu.svg" alt="">
-            <img class="youtube-logo" src="icons/youtube-logo.svg" alt="">
+            <img class="hamburger-menu" src="../icons/hamburger-menu.svg" alt="">
+            <img class="youtube-logo" src="../icons/youtube-logo.svg" alt="">
         </div>
         <div class="middle-section">
             <input class="search-bar" type="text" placeholder="Search">
             <button class="search-button">
-                <img class="search-icon" src="icons/search.svg" alt="">
+                <img class="search-icon" src="../icons/search.svg" alt="">
                 <div class="tooltip">Search</div>
             </button>
             <button class="voice-search-button">
-                <img src="icons/voice-search-icon.svg" alt="">
+                <img src="../icons/voice-search-icon.svg" alt="">
                 <div class="tooltip">Search with your voice</div>
             </button>
         </div>
         <div class="right-section">
             <div class="upload-icon-container">
-                <img class="upload-icon" src="icons/upload.svg" alt="">
+                <img class="upload-icon" src="../icons/upload.svg" alt="">
                 <div class="tooltip">Create</div>
             </div>
             <div class="youtube-app-icon-container">
-                <img class="youtube-app-icon" src="icons/youtube-apps.svg" alt="">
+                <img class="youtube-app-icon" src="../icons/youtube-apps.svg" alt="">
                 <div class="tooltip">Youtube apps</div>
             </div>
             <div class="notifications-icon-container">
-                <img class="notifications-icon" src="icons/notifications.svg" alt="">
+                <img class="notifications-icon" src="../icons/notifications.svg" alt="">
                 <div class="tooltip">Notifications</div>
                 <div class="notifications-count">3</div>
             </div>
-            <img class="current-user-picture" src="channel-pictures/my-channel.jpeg" alt="">
+            <img class="current-user-picture" src="../channel-pictures/my-channel.jpeg" alt="">
         </div>
 
     </div>
 
     <div class="sidebar">
         <div class="sidebar-link">
-            <img src="icons/home.svg" alt="">
+            <img src="../icons/home.svg" alt="">
             <div>Home</div>
         </div>
         <div class="sidebar-link">
-            <img src="icons/explore.svg" alt="">
+            <img src="../icons/explore.svg" alt="">
             <div>Explore</div>
         </div>
         <div class="sidebar-link">
-            <img src="icons/subscriptions.svg" alt="">
+            <img src="../icons/subscriptions.svg" alt="">
             <div>Subscriptions</div>
         </div>
         <div class="sidebar-link">
-            <img src="icons/originals.svg" alt="">
+            <img src="../icons/originals.svg" alt="">
             <div>Originals</div>
         </div>
         <div class="sidebar-link">
-            <img src="icons/youtube-music.svg" alt="">
+            <img src="../icons/youtube-music.svg" alt="">
             <div>Youtube Music</div>
         </div>
         <div class="sidebar-link">
-            <img src="icons/library.svg" alt="">
+            <img src="../icons/library.svg" alt="">
             <div>Library</div>
         </div>
     </div>
@@ -85,7 +90,7 @@
         <div class="video-preview">
             <div class="thumbnail-row">
                 <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
-                    <img class="thumbnail" src="thumbnails/thumbnail-1.webp" alt="Marques Brownlee">
+                    <img class="thumbnail" src="../thumbnails/thumbnail-1.webp" alt="Marques Brownlee">
                 </a>
                 <div class="video-time">14:20</div>
             </div>
@@ -93,10 +98,10 @@
                 <div class="channel-picture">
                     <div class="profile-picture-container">
                         <a href="https://www.youtube.com/c/mkbhd">
-                            <img class="profile-picture" src="channel-pictures/channel-1.jpeg" alt="">
+                            <img class="profile-picture" src="../channel-pictures/channel-1.jpeg" alt="">
                         </a>
                         <div class="channel-tooltip">
-                            <img class="channel-tooltip-profile-picture" src="channel-pictures/channel-1.jpeg" alt="">
+                            <img class="channel-tooltip-profile-picture" src="../channel-pictures/channel-1.jpeg" alt="">
                             <div class="">
                                 <div class="channel-tooltip-name">Marques Brownlee</div>
                                 <div class="channel-tooltip-stats">15M subscribers</div>
@@ -119,7 +124,7 @@
         <div class="video-preview">
             <div class="thumbnail-row">
                 <a href="https://www.youtube.com/watch?v=mP0RAo9SKZk">
-                    <img class="thumbnail" src="thumbnails/thumbnail-2.webp" alt="Markiplier">
+                    <img class="thumbnail" src="../thumbnails/thumbnail-2.webp" alt="Markiplier">
                 </a>
                 <div class="video-time">8:22</div>
             </div>
@@ -127,10 +132,10 @@
                 <div class="channel-picture">
                     <div class="profile-picture-container">
                         <a href="https://www.youtube.com/c/markiplier">
-                            <img class="profile-picture" src="channel-pictures/channel-2.jpeg" alt="">
+                            <img class="profile-picture" src="../channel-pictures/channel-2.jpeg" alt="">
                         </a>
                         <div class="channel-tooltip">
-                            <img class="channel-tooltip-profile-picture" src="channel-pictures/channel-2.jpeg" alt="">
+                            <img class="channel-tooltip-profile-picture" src="../channel-pictures/channel-2.jpeg" alt="">
                             <div>
                                 <div class="channel-tooltip-name">Markiplier</div>
                                 <div class="channel-tooltip-stats">34M subscribers</div>
@@ -151,7 +156,7 @@
         <div class="video-preview">
             <div class="thumbnail-row">
                 <a href="https://www.youtube.com/watch?v=FgjPQQeTh1w">
-                    <img class="thumbnail" src="thumbnails/thumbnail-3.webp" alt="SSSniperWolf">
+                    <img class="thumbnail" src="../thumbnails/thumbnail-3.webp" alt="SSSniperWolf">
                 </a>
                 <div class="video-time">9:13</div>
             </div>
@@ -159,10 +164,10 @@
                 <div class="channel-picture">
                     <div class="profile-picture-container">
                         <a href="https://www.youtube.com/user/SSSniperWolf">
-                            <img class="profile-picture" src="channel-pictures/channel-3.jpeg" alt="">
+                            <img class="profile-picture" src="../channel-pictures/channel-3.jpeg" alt="">
                         </a>
                         <div class="channel-tooltip">
-                            <img class="channel-tooltip-profile-picture" src="channel-pictures/channel-3.jpeg" alt="">
+                            <img class="channel-tooltip-profile-picture" src="../channel-pictures/channel-3.jpeg" alt="">
                             <div>
                                 <div class="channel-tooltip-name">SSSniperWolf</div>
                                 <div class="channel-tooltip-stats">33M subscribers</div>
@@ -184,7 +189,7 @@
         <div class="video-preview">
             <div class="thumbnail-row">
                 <a href="https://www.youtube.com/watch?v=094y1Z2wpJg">
-                    <img class="thumbnail" src="thumbnails/thumbnail-4.webp" alt="Veritasium">
+                    <img class="thumbnail" src="../thumbnails/thumbnail-4.webp" alt="Veritasium">
                 </a>
                 <div class="video-time">22:09</div>
             </div>
@@ -192,10 +197,10 @@
                 <div class="channel-picture">
                     <div class="profile-picture-container">
                         <a href="https://www.youtube.com/c/veritasium">
-                            <img class="profile-picture" src="channel-pictures/channel-4.jpeg" alt="">
+                            <img class="profile-picture" src="../channel-pictures/channel-4.jpeg" alt="">
                         </a>
                         <div class="channel-tooltip">
-                            <img class="channel-tooltip-profile-picture" src="channel-pictures/channel-4.jpeg" alt="">
+                            <img class="channel-tooltip-profile-picture" src="../channel-pictures/channel-4.jpeg" alt="">
                             <div>
                                 <div class="channel-tooltip-name">Veritasium</div>
                                 <div class="channel-tooltip-stats">14M subscribers</div>
@@ -217,7 +222,7 @@
         <div class="video-preview">
             <div class="thumbnail-row">
                 <a href="https://www.youtube.com/watch?v=86CQq3pKSUw">
-                    <img class="thumbnail" src="thumbnails/thumbnail-5.webp" alt="CS Dojo">
+                    <img class="thumbnail" src="../thumbnails/thumbnail-5.webp" alt="CS Dojo">
                 </a>
                 <div class="video-time">11:17</div>
             </div>
@@ -225,10 +230,10 @@
                 <div class="channel-picture">
                     <div class="profile-picture-container">
                         <a href="https://www.youtube.com/c/CSDojo">
-                            <img class="profile-picture" src="channel-pictures/channel-5.jpeg" alt="">
+                            <img class="profile-picture" src="../channel-pictures/channel-5.jpeg" alt="">
                         </a>
                         <div class="channel-tooltip">
-                            <img class="channel-tooltip-profile-picture" src="channel-pictures/channel-5.jpeg" alt="">
+                            <img class="channel-tooltip-profile-picture" src="../channel-pictures/channel-5.jpeg" alt="">
                             <div>
                                 <div class="channel-tooltip-name">CS Dojo</div>
                                 <div class="channel-tooltip-stats">1.7M subscribers</div>
@@ -250,7 +255,7 @@
         <div class="video-preview">
             <div class="thumbnail-row">
                 <a href="https://www.youtube.com/watch?v=yXWw0_UfSFg">
-                    <img class="thumbnail" src="thumbnails/thumbnail-6.webp" alt="MrBeast">
+                    <img class="thumbnail" src="../thumbnails/thumbnail-6.webp" alt="MrBeast">
                 </a>
                 <div class="video-time">19:59</div>
             </div>
@@ -258,10 +263,10 @@
                 <div class="channel-picture">
                     <div class="profile-picture-container">
                         <a href="https://www.youtube.com/channel/UCX6OQ3DkcsbYNE6H8uQQuVA">
-                            <img class="profile-picture" src="channel-pictures/channel-6.jpeg" alt="">
+                            <img class="profile-picture" src="../channel-pictures/channel-6.jpeg" alt="">
                         </a>
                         <div class="channel-tooltip">
-                            <img class="channel-tooltip-profile-picture" src="channel-pictures/channel-6.jpeg" alt="">
+                            <img class="channel-tooltip-profile-picture" src="../channel-pictures/channel-6.jpeg" alt="">
                             <div>
                                 <div class="channel-tooltip-name">MrBeast</div>
                                 <div class="channel-tooltip-stats">245M subscribers</div>
@@ -283,5 +288,4 @@
 
     </div>
 </body>
-
 </html>
