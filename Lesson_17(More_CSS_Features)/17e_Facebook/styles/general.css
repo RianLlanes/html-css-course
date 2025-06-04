@@ -1,0 +1,15 @@
+* {
+    /* box-sizing: border-box; */
+    font-family: Segoe UI;
+    /* font-family: Helvetica, Arial, sans-serif; */
+    /* box-sizing: border-box; */
+}
+
+
+body {
+    margin: 0px;
+    /* height: 3000px; */
+    /* display: flex;
+    flex-direction: column;
+    position: relative; */
+}
