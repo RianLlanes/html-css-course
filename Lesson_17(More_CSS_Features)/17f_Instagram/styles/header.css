@@ -1,0 +1,117 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: inherit;
+    position: sticky;
+    top: 0;
+    border-right: 1px solid #dbdbdb;
+    padding-top: 8px;
+    padding-bottom: 20px;
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 244px;
+    flex-shrink: 0;
+}
+
+
+.logo-container {
+    display: flex;
+    align-content: center;
+    padding-top: 25px;
+    padding-bottom: 16px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-bottom: 14px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    /* flex-basis: 37px; */
+    height: 37px;
+    justify-content: flex-end;
+}
+
+.primary-navigation {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    padding: 12px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+    transition: background-color .25s,
+                opacity .1s;
+}
+
+.nav-item:hover {
+    background-color: rgba(0, 0, 0, .05);
+}
+
+.nav-item:active {
+    opacity: .4;
+}
+
+.primary-navigation .nav-item:nth-child(1) {
+    font-weight: bold;
+}
+
+.nav-item-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-item-icon img {
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-item-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 16px;
+}
+
+.secondary-navigation {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 1920px) {
+    .header {
+        width: 335px;
+    }
+}
+
+@media (max-height: 720px) {
+    .secondary-navigation .nav-item:nth-child(1), 
+    .secondary-navigation .nav-item:nth-child(2), 
+    .secondary-navigation .nav-item:nth-child(3) {
+        display: none;
+    }
+}
+
+@media (max-height: 600px) {
+    .nav-item {
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+}
+

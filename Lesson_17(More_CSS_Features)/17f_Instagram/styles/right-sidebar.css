@@ -1,0 +1,141 @@
+.right-sidebar {
+    /* background-color: lightyellow; */
+    width: 319px;
+    padding-left: 64px;
+    box-sizing: content-box;
+}
+
+.user-profile {
+    margin-top: 36px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.profile-layout {
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.profile-picture img {
+    display: block;
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.profile-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 12px;
+    flex-grow: 1;
+    font-size: 14px;
+}
+
+.user-handle {
+    font-weight: bold;
+}
+
+.user-name {
+    color: rgb(115, 115, 115);
+}
+
+.option {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 600;
+    color: #0095F6;
+    cursor: pointer;
+}
+
+.option span:hover {
+    color: #00376b;
+}
+
+.option span:active {
+    opacity: .4;
+}
+
+.friend-suggestions-container {
+    margin-top: 24px;
+    margin-bottom: 33px;
+    display: flex;
+    flex-direction: column;
+}
+
+.friend-suggestions-container-header {
+    font-weight: 600;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    display: flex;
+    flex-direction: row;
+}
+
+.friend-suggestions-text {
+    font-size: 14px;
+    flex-grow: 1;
+    color: #737373;
+}
+
+.friend-suggestions-option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.friend-suggestions-option:hover {
+    opacity: .4;
+}
+
+.suggested-profile {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 20px;
+    padding-right: 16px;
+}
+
+.suggested-profile .user-name {
+    font-size: 12px;
+}
+
+.miscellaneous-container {
+    color: #C7C7C7;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.miscellaneous {
+    display: flex;
+    flex-wrap: wrap;                          
+    font-size: 12px;
+    margin-bottom: 21px;
+    row-gap: 3px;
+}
+
+.miscellaneous span:hover { 
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.miscellaneous span:active { 
+    opacity: .4;
+}
+
+
+.miscellaneous-option:not(:last-of-type)::after {
+    content: "\b7";
+    margin: 0 0.25em;
+}
+
+
+.credits {
+    font-size: 12px;
+}
