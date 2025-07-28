@@ -33,6 +33,10 @@
     justify-content: flex-end;
 }
 
+.instagram-logo {
+    display: none;
+}
+
 .primary-navigation {
     display: flex;
     flex-direction: column;
@@ -97,6 +101,28 @@
 @media (min-width: 1920px) {
     .header {
         width: 335px;
+    }
+}
+
+@media (max-width: 1160px) {
+    .header {
+        width: 72px;
+    }
+
+    .logo {
+        justify-content: center;
+    }
+
+    .instagram-logo {
+        display: block;
+    }
+
+    .instagram-logo-name {
+        display: none;
+    }
+
+    .nav-item-description {
+        display: none;
     }
 }
 
