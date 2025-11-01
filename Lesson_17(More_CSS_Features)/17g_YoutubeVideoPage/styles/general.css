@@ -9,7 +9,7 @@ body  {
     display: flex;
     flex-direction: column;
     position: relative;
-    height: 3000px;
+    /* height: 3000px; */
 }
 
 .main-container {
