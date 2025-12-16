@@ -78,6 +78,11 @@
     cursor: pointer;
 }
 
+.main-channel-verification {
+    padding-left: 4px;
+    margin-bottom: 1px;
+}
+
 .channel-info .subscribers {
     height: 18px;
     font-size: 12px;
@@ -339,6 +344,7 @@
 .sort-container {
     display: flex;
     flex-direction: row;
+    cursor: pointer;
 }
 
 .sort-svg {
@@ -357,7 +363,7 @@
 .add-comment-container {
     display: flex;
     flex-direction: row;
-    margin-bottom: 32px;
+    margin-bottom: 28px;
 }
 
 .add-comment-container img {
@@ -381,4 +387,119 @@
     outline: none;
 }
 
+.comment {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-bottom: 16px;
+}
 
+.commenter-profile-picture {
+    margin-right: 16px;
+}
+
+.commenter-profile-picture img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.comment-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.commenter-header {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;
+}
+
+.comment-author {
+    font-size: 13px;
+    font-weight: 500;
+    margin-right: 4px;
+    cursor: pointer;
+}
+
+.comment-age {
+    font-size: 12px;
+    color: #606060;
+    cursor: pointer;
+}
+
+.comment-age:hover {
+    color: #000000;
+}
+
+.comment-text {
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.comment-actions {
+    display: flex;
+    flex-direction: row;
+    height: 32px;
+    margin-left: -8px;
+}
+
+.comment-like-btn-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.comment-like-counter {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: #606060;
+    margin-right: 8px;
+}
+
+.comment-like-btn, .comment-dislike-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.comment-like-btn:hover, .comment-dislike-btn:hover, .comment-reply-btn:hover, .comment-options:hover {
+    background-color: #e5e5e5;
+}
+
+.comment-like-btn:active, .comment-dislike-btn:active, .comment-reply-btn:active, .comment-options:active {
+    background-color: #cecece;
+}
+
+.comment-reply-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 53.66px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 32px;
+    margin-left: 8px;
+    border-radius: 1000px;
+    cursor: pointer;
+}
+
+.comment-options {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -10px;
+    right: 2px;
+    height: 36px;
+    width: 36px;
+    border-radius: 100%;
+    cursor: pointer;
+    z-index: 2;
+}
